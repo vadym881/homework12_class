@@ -64,5 +64,7 @@ print(cart)
 # lemon: 4 pcs.
 # apple: 30 pcs.
 
-# assert cart.get_total() == 40
+cart.products[lemon] = 0
+cart.products[apple] = 20
+assert cart.get_total() == 40
 print('Test succesfully completed')
